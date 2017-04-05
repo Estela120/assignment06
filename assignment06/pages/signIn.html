@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Narrow Jumbotron -used for MENUE ITEMS</title>
+
+   <!-- Bootstrap core CSS -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	
+    <!-- Latest compiled and minified CSS -->
+	<link href="/css/jumbotron-narrow.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/mystyle.css">
+<!-- Bootstrap core CSS -->
+<!-- Link to bootstrap.min.css-->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+<!-- Custom styles for this template -->
+<!-- Link to carousel.css -->
+    <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+<!--
+    <script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
+   <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../dist/js/bootstrapValidator.js"></script>
+-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="/pages/pizza.html">Pizzas</a></li>
+            <li role="presentation"><a href="/pages/salad.html" >Salads</a></li>
+            <li role="presentation"><a href="/pages/dessert.html">Desserts</a></li>
+			 <li role="presentation"><a href="../index.html">Home</a></li>
+          </ul>
+        </nav>
+<!--        <h3 class="text-muted">Project name</h3>  -->
+		  <a href="/pages/orderonline.html" class="navbar-brand"  class="btn btn-success btn-sm">
+		 <span class="glyphicon glyphicon-cutlery"></span> Order Online 
+		 </a>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Your Account</h1>
+		  <h2> Sign In</h2>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-sm btn-success" href="/pages/orderonline.html" role="button">Return to Order Online</a></p>
+		<p><a class="btn btn-sm btn-success" href="/pages/billing.html" role="button"> Your Billing information </a></p>
+      </div>
+<!--//////////////////////////////////-->
+<!--////////////  SIGN IN ///////////// -->
+<!--//////////////////////////////////-->
+
+<div class="row marketing">
+<div class="col-lg-6">			
+ <div class="signin" id="signin">
+	<div class="container">
+   
+	<form class="form-signin" id="myForm">
+       <h2 class="form-signin-heading">Please sign in</h2>
+		<label id="messageFullName" onkeyup="produceMessage()"  for="inputFullName" class="sr-only">Your Name</label>
+        <input name="fullName" type="text" id="inputFullName" class="form-control" placeholder="Full Name">
+		  
+		<label for="inputAddress" class="sr-only">Address</label>
+        <input name="address" type="text" id="inputAddress" class="form-control" placeholder="#Street #Apt City Zip">
+
+		  
+		<label for="inputPhone" class="sr-only">Phone</label>
+        <input name="phone" type="text" id="inputPhone" class="form-control" placeholder="800-999-0000" >
+        
+		<label for="inputEmail" class="sr-only">Email address</label>
+        <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address">
+		  
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input name="Password1" type="password"id="inputPassword1" class="form-control" placeholder="Password" >
+        
+<!--
+		<div class="checkbox">
+       <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>       
+-->
+		  
+		<input class="btn btn-lg btn-primary btn-block" value="Sign In" type="submit">		 	  
+</form>
+    </div> <!-- /container -->	
+  </div><!--END of class signing-->
+ </div><!--END class="col-lg-6"-->
+</div><!-- END class row marketing-->
+		
+<!--//////////////////////////////////-->
+<!--//////////// END of SIGN IN ///////////// -->
+<!--//////////////////////////////////-->		
+<!--//////////////////////////////////-->
+<!--//////////// BILLING ///////////// -->
+<!--//////////////////////////////////-->
+<!--<br><hr><br>-->
+<!--/////  BILLING //////// -->
+<!--<div class="row marketing">-->
+<!--
+<div class="col-lg-6">
+<div class="billing">
+  <div class="container">	
+   <form class="form-signin">
+        <h2 class="form-signin-heading">Submit Billing Information</h2>
+		
+<label for="inputFullName" class="sr-only">Your Name</label>
+<input type="text" id="inputFullName" class="form-control" placeholder="Name in Credit Card">
+<!--<span style="color:red;align=center;font-size:0.7em"" id="errorMessg">ERROR MESSAGE</span>-->
+<!--
+<br><br>		  
+<label for="inputCCNum" class="sr-only">Credit Card Numbers</label>
+<input type="text" id="creditCard" id="inputCCNum" class="form-control" placeholder="Credit Card Numbers">
+<!--<span style="color:red;align=center;font-size:0.7em"" id="errorMessg">ERROR MESSAGE</span>-->
+<!--
+<br><br>
+	
+<label for="inputPassword" class="sr-only">Password</label>
+<input type="password" id="inputPassword" class="form-control" placeholder="Password">
+<!--<span style="color:red;align=center;font-size:0.7em" id="errorMessg">ERROR MESSAGE</span>-->
+<!--
+<br><br>
+        
+<div class="checkbox">
+<label>
+<!--<input type="checkbox" value="remember-me"> Remember Billing Information-->
+<!--
+<label for="inputCCNum" class="sr-only">Credit Card Numbers</label>
+<input type="text" id="secNum" id="inputCCNum" class="form-signinHalf" class="form-control" placeholder="Security Numbers">
+</label>
+<!--<span style="color:red;align=right;font-size:0.7em"" id="errorMessg">ERROR MESSAGE</span>-->
+<!--
+<br><br>
+</div><!--end checkbox-->
+<!--		  
+<button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+	  
+</form>		
+</div><!-- /container -->
+<!--</div><!--END of class billing	-->
+<!--</div><!--END class="col-lg-6"-->
+<!--</div> END class row marketing-->
+		
+<!--//////////////////////////////////-->
+<!--////////////  END of BILLING ///////////// -->
+<!--//////////////////////////////////////-->
+<!--	  
+<div class="message-billing">
+          <h4>Some Message</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+</div><!--END class messaga-billing-->
+
+ <!-- FOOTER -->
+      <footer>
+         <p class="pull-right"><a href="#">Back to top</a><br>
+		<a href="http://glyphicons.com/"><span class="glyphicon glyphicon-thumbs-up"></span>Thank you Glyphicons!</a></p>
+        <p>&copy; 2017 PIT-ZZE-RIA, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+		<a href="/pages/orderonline.html" class="btn btn-success btn-sm">
+         <span class="glyphicon glyphicon-cutlery"></span> Order Online</a><br>
+		 <a href="https://www.google.com"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search</a>
+		 &nbsp
+		 <a href="/pages/signIn.html" class="login" class="btn btn-sm">
+		 <span class="glyphicon glyphicon-log-in"></span>Login</a>
+		 <a href="/pages/billing.html" class="login" class="btn btn-sm">
+		 <span class="glyphicon glyphicon-log-in"></span>Your Billing</a>
+		  
+<!-- ///////////////////////////////-->
+	 <!-- BEGINING of SOCIAL MEDIA -->         
+  <!-- ///////////////////////////////-->		  	
+	<div class="social_media">
+		<a href="https://twitter.com"><span class="glyphicon glyphicon-ok-circle"></span>Twitter -</a>
+	  	
+	  	<a href="https://www.facebook.com" ><span class="glyphicon glyphicon-ok-circle"></span>FB - </a>
+	    
+	  	<a href="https://plus.google.com" ><span class="glyphicon glyphicon-ok-circle"></span>Google+</a>
+	</div>  
+<!-- ///////////////////////////////-->
+	 <!-- END of SOCIAL MEDIA -->         
+<!-- ///////////////////////////////-->		  
+	 	  
+     </footer>
+
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	 <!-- Latest compiled and minified JavaScript -->
+	
+	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/js/bootstrap.min.js"></script>
+	<!--    <script src="../../dist/js/bootstrap.min.js"></script>-->
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+
+
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<!--    <script src="../../assets/js/vendor/holder.min.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	 
+	<script src ="/js/myscript.js"></script>
+	<script src="/js/signIn.js"></script>
+
+
+</body>
+</html>

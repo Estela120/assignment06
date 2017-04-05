@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Narrow Jumbotron -used for MENUE ITEMS</title>
+   	
+	<!-- Bootstrap core CSS -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	
+    <!-- Latest compiled and minified CSS -->
+	<link href="/css/jumbotron-narrow.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/mystyle.css">
+<!-- Bootstrap core CSS -->
+<!-- Link to bootstrap.min.css-->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+<!-- Custom styles for this template -->
+<!-- Link to carousel.css -->
+    <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+<!--
+    <script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
+   <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../dist/js/bootstrapValidator.js"></script>
+-->
+	<link href="/css/mystyle.css" rel="stylesheet">
+ </head>
+
+ <body>
+   <div class="container">
+     <div class="header clearfix">
+       <nav>
+         <ul class="nav nav-pills pull-right">
+          <li role="presentation" class="active"><a href="/pages/pizza.html">Pizzas</a></li>
+          <li role="presentation"><a href="/pages/salad.html" >Salads</a></li>
+          <li role="presentation"><a href="/pages/dessert.html">Desserts</a></li>
+		  <li role="presentation"><a href="../index.html">Home</a></li>
+         </ul>
+       </nav>
+
+<a href="/pages/orderonline.html" class="navbar-brand"  class="btn btn-success btn-sm"><span class="glyphicon glyphicon-cutlery"></span> Order Online</a>
+      </div><!-- END class "header clearfix"-->
+
+    <div class="jumbotron">
+        <h1>Menue</h1>
+		<h2>Order Online</h2>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+		<p><a class="btn btn-sm btn-success" href="/pages/billing.html" role="button">Your Billing Information</a></p>
+    </div><!--END class jumbotron  -->
+<!--////////////   MY FORM    ///////////-->
+<form id="myForm">		
+<div id="orderOptions">
+<!--<div id="continer-btnradio1" class="col-lg-6" id="floatLeft" style="background: lightyellow">-->
+<h5><b>SELECT YOUR PIZZA DOUGH</b></h5>
+ <div id="radio_container1" id="floatLeft" style="background: lightyellow">
+	 
+  	<div class="radio"><label><input type="radio" id="handTossed" name="group1" value="HandTossed" /> Hand Tossed</label></div>
+	
+  	<div class="radio"><label><input type="radio" id="thinCrust" name="group1" value="ThinCrust" /> Thin Crust</label></div>
+  
+	<div class="radio"><label><input type="radio" id="nyStyle" name="group1" value="NewYorkStyle" /> New York Style</label></div>
+						
+	<div class="radio"><label><input type="radio" id="gluten" name="group1" value="Glutten" /> Glutten Free</label></div>
+ 
+ </div><!--END radio_container1 -->
+</div><!--END id continer-btnradio1 -->
+	 &nbsp
+
+<!--///////////////////////////////////////////////////////-->	
+	
+	
+	<div id="zakMenu " class ="col-lg-12 floatLeft">
+	<select id="cost1" class= "zak  hide"></select>
+	<select id="cost2" class= "zak  hide"></select>
+	<select id="cost3" class= "zak  hide"></select>
+	<select id="cost4" class= "zak  hide"></select>
+	
+	</div>
+	
+<!--///////////////////////////////////////////////////////-->	
+
+<div id="continer-btndropList" class="col-lg-12" id="floatLeft">
+<select  id="ht" class="form-control hide" name="htSize" >                
+    <option value=0 id="ht"  name="htOption">Hand Tossed</option>
+	<option value=14.99  id="htSmall" name="htSmall">HT Small ($14.90)</option>
+    <option value=15.90 id="htMedium" name="htMedium">HT Medium ($15.90)</option>
+    <option value=16.90 id="htLarge" name="htLarge">HT Large ($16.90)</option>
+	<option value=18.90 id="htExtraLarge" name="htExtraLarge">HT Extra Large ($18.90)</option>
+</select>
+</div> <!-- End btndropList for NYStyle-->
+
+<!--/////--->
+<!--<div id="continer-btndropList" class="col-lg-12" id="floatLeft">-->
+<select  id="tc" class="form-control hide" name="tcSize" >                
+	<option value=0 id="tc" name="tcOption">Thin Crust</option>
+    <option value=10.99 id="tcSmall" name="tcSmall">tcSmall ($10.90)</option>
+    <option value=12.90 id="tcMedium" name="tcMedium">tcMedium ($12.90)</option>
+    <option value=14.90 id="tcLarge" name="tcLarge">tcLarge ($14.90)</option>
+	<option value=16.90 id="tcExtraLarge" name="tcExtraLarge">tcExtra Large ($16.90)</option>
+</select>  
+<!--/////--->
+
+<select  id="ny" class="form-control hide" name="nySize" >                
+	<option value=0 id="ny" name="nyOption">New York Style</option>
+    <option value=14.90 id="nySmall" name="nySmall">ny Small ($14.90)</option>
+    <option value=15.90 id="nyMedium" name="nyMedium">ny Medium ($15.90)</option>
+    <option value=16.90 id="nyLarge" name="nyLarge">ny Large ($16.90)</option>
+	<option value=18.90 id="nyExtraLarge" name="nyExtraLarge">ny Extra Large ($18.90)</option>
+</select>
+
+<!--/////--->
+<select  id="gl" class="form-control hide" name="glSize" >                
+	<option value=0 id="gl" name="glOption">Gluten</option>
+    <option value=10.90 id="glSmall" name="glSmall">Small ($10.90)</option>
+    <option value=12.90 id="glMedium" name="glMedium">Medium ($12.90)</option>
+    <option value=14.90 id="glLarge" name="glLarge">Large ($14.90)</option>
+	<option value=16.90 id="glExtraLarge" name="glExtraLarge">Extra Large ($16.90)</option>
+</select>
+<!-- /////-->	
+<br><br>
+<!--/////--->
+	
+<div id="continer-btndropList" class="col-lg-12" id="floatLeft">
+			  
+<!--   ///////////////////////////////////////////////	 --> 
+		
+<div id="continer-btndropList" class="col-lg-12" id="floatLeft">
+	<select class="form-control" id="cheeseOpt" name="cheese" >
+<!--ex name="dropOpt1"-->
+        <option value="Normal Cheese" id="normalCh" name="Normal Cheese">--  Normal Cheese  ($0.00)</option>
+        <option value="Light Cheese" id="lightCh"  name="Light Cheese">Light ($0.00)</option>
+        <option value="Extra Cheese" id="extraCh" name="Extra Cheese">Extra ($2.99)</option>
+        <option value="Double Cheese" id="doubleCh" name="Double Cheese">Double ($3.99)</option>
+	</select>
+</div> <!-- End btndropList for cheese-->
+<div id="continer-btndropList" class="col-lg-6" id="floatLeft">
+ &nbsp
+	<select class="form-control" id="sauceOpt" name="sauce" >
+<!--ex name="dropOpt2"-->
+         <option value="Regular Tomato" id="regSauce" name="Regular Tomato">Regular  Tomato ($0.00)</option>
+         <option value="Hearty Tomato" id="heartySauce" name="Hearty Tomato">Hearty Tomato  ($0.99)</option>
+         <option value="BBQ Sauce" id="bbSauce" name="BB Sauce">BBQ Sauce ($1.99)</option>
+   </select>
+ </div><!-- End btndropList for sauceOpt-->
+</div><!--END id continer-btnradio2" -->
+<!--</div>END id orderOptions	-->
+	
+<!-- //////////       TOPPINGS      //////////  -->	
+
+<div class="col-lg-12" class="checkbox" id="toppings">
+	<h4>Each extra topping ($0.99)</h4>
+	<div id="toppingBox1" id= "toppfloatLeft">
+	<label><input id="pepperoni" type="checkbox" value="pepperoni"> pepperoni</label>
+	<!--for="inputCCNum"-->
+	
+	<label  class="sr-only">pepperoni<input type="text" id="pepperoni"  class="form_toppings" class="form-control" placeholder="pepperoni"></label>
+	<!--<span style="color:red; align=right;font-size:0.7em" id="errorMessg">ERROR MESSAGE</span>-->
+	<br>
+	<label><input id="sausage" type="checkbox" value="sausage"> sausage</label>		
+	<label  class="sr-only">sausage<input type="text" id="sausage"  class="form_toppings" class="form-control" placeholder="sausage"></label>
+	<!--<span style="color:red; align=right;font-size:0.7em" id="errorMessg">ERROR MESSAGE</span>-->
+	<br>
+	<label><input id="ham" type="checkbox" value="ham"> ham</label>	
+	<label  class="sr-only">ham<input type="text" id="ham"  class="form_toppings" class="form-control" placeholder="ham"></label>
+	<!--<span style="color:red; align=right;font-size:0.7em" id="errorMessg">ERROR MESSAGE</span>-->
+	<br>		  		
+	<label><input id="bacon" type="checkbox" value="bacon"> bacon</label>	
+	<label  class="sr-only">bacon<input type="text" id="bacon"  class="form_toppings" class="form-control" placeholder="bacon"></label>
+	<!--<span style="color:red; align=right;font-size:0.7em" id="errorMessg">ERROR MESSAGE</span>-->
+	<br>	
+	<label><input id="salami" type="checkbox" value="salami"> salami</label>	
+	<label  class="sr-only">salami<input type="text" id="salami"  class="form_toppings" class="form-control" placeholder="salami"></label>
+	<!--<span style="color:red; align=right;font-size:0.7em" id="errorMessg">ERROR MESSAGE</span>-->
+	<br>
+	<label><input id="onions" type="checkbox" value="onions"> onions</label>	
+	<label  class="sr-only">onions<input type="text" id="onions"  class="form_toppings" class="form-control" placeholder="onions"></label>
+	<!--<span style="color:red; align=right;font-size:0.7em" id="errorMessg">ERROR MESSAGE</span>-->
+	<br>
+	<label><input id="peppers" type="checkbox" value="peppers"> peppers</label>	
+	<label  class="sr-only">peppers<input type="text" id="peppers"  class="form_toppings" class="form-control" placeholder="peppers"></label>
+	<!--<span style="color:red; align=right;font-size:0.7em" id="errorMessg">ERROR MESSAGE</span>-->
+	<br>
+	<label><input id="olives" type="checkbox" value="olives"> olives</label>	
+	<label  class="sr-only">olives<input type="text" id="olives"  class="form_toppings" class="form-control" placeholder="olives"></label>
+	<!--<span style="color:red; align=right;font-size:0.7em" id="errorMessg">ERROR MESSAGE</span>-->
+	<br>
+	<label><input id="jalapenos" type="checkbox" value="jalapenos"> jalapenos</label>	
+	<label  class="sr-only">jalapenos<input type="text" id="jalapenos"  class="form_toppings" class="form-control" placeholder="jalapenos"></label>
+	<!--<span style="color:red; align=right;font-size:0.7em" id="errorMessg">ERROR MESSAGE</span>-->
+	<br>
+	<label><input id="mushrooms" type="checkbox" value="mushrooms"> mushrooms</label>	
+	<label  class="sr-only">mushrooms<input type="text" id="mushrooms"  class="form_toppings" class="form-control" placeholder="mushrooms"></label>
+	<!--<span style="color:red; align=right;font-size:0.7em" id="errorMessg">ERROR MESSAGE</span>-->
+	<br>
+	<label><input id="pineapple" type="checkbox" value="pineapple"> pineapple</label>	
+	<label  class="sr-only">pineapple<input type="text" id="pineapple"  class="form_toppings" class="form-control" placeholder="pineapple"></label>
+	<!--<span style="color:red; align=right;font-size:0.7em" id="errorMessg">ERROR MESSAGE</span>-->
+	<br>	
+
+</div><!--END  id="toppingBox1" -->
+<!--//////end box1////-->
+	
+<div class="checkbox">
+		<label><input type="checkbox" value="billing address">Use Delivery Address same as Billing Address</label>
+	<!--for="inputCCNum"-->
+	<label  class="sr-only">Delivery Address
+		<input type="text" id="deliveryAddr"  class="form_delivery" class="form-control" placeholder="Delivery Address">
+	</label>
+		<!--<span style="color:red; align=right;font-size:0.7em" id="errorMessg">ERROR MESSAGE TEST</span>-->
+	<br><br>
+</div><!--END class checkbox    -->
+<div id="continer-btnradio2" id="userFinalOrder"  class="col-lg-12" id="floatLeft" style="background: lightblue">
+<div class="row">
+		
+	<div class="boxed col-lg-9" id="floatLeft">		
+  		<h3><b>Your order</b></h3>
+		<p> Dough, Size, Options</p> 
+		<p id="placeHere"></p>
+		<p id="placeHere1"></p>
+		<p id="placeHere2"></p>	
+	</div>
+	
+<!--
+	
+	<div id="zakMenu " class ="col-lg-9 floatLeft">
+	<select id="cost1" class= "zak  hide"></select>
+	<select id="cost2" class= "zak  hide"></select>
+	<select id="cost3" class= "zak  hide"></select>
+	<select id="cost4" class= "zak  hide"></select>
+	<p id="zakTotal">-Zak menu</p>
+	</div>
+-->
+			
+<div class="boxed2 col-lg-6" id="floatRight" id="total" style="border:solid red 2px background:lightblue">
+<!--				$<input type="text" id="userTotal">-->
+  $<input type="text" id="zakTotal">
+<!--	<p id="zakTotal"></p>-->
+</div>	
+			
+</div><!--END id="continer-btnradio2" id="userFinalOrder"  -->
+</div>
+	
+	<input class="btn btn-lg btn-primary btn-block" type="button" id="btnCheck" value="Click to Check Your Order" >
+	
+	<input class="btn btn-lg" style="background:blue; color:white" type="button" id="submit" value="Submit" >
+	
+	<button style="background:white; color:lightgreen"><a href="../index.html">Cancel and Go Home</a></button>
+
+	
+	<!--///////////////-->		
+	<!--<button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>--><!--//////////  END of CHECK BOX remember billing or same as delivery information /////---->	
+</div><!-- end id toppings -->
+	<div class="col-lg-6" id="someMesg">
+          <h4>Some Message</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>   
+	</div><!-- END class col-lg-6 id someMesg-->	
+
+<!--</div>	-->
+</form>
+<!--////////////  END of  MY FORM    ///////////-->
+	
+ <footer class="footer">
+       <p class="pull-right"><a href="#">Back to top</a><br>
+		<a href="http://glyphicons.com/"><span class="glyphicon glyphicon-thumbs-up"></span>Thank you Glyphicons!</a></p>
+        <p>&copy; 2017 PIT-ZZE-RIA, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+		<a href="#" class="btn btn-success btn-sm">
+         <span class="glyphicon glyphicon-cutlery"></span> Order Online</a><br>
+		 <a href="#"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search</a>
+		 &nbsp
+		 <a href="/pages/signIn.html" class="login" class="btn btn-sm">
+         <span class="glyphicon glyphicon-log-in"></span>Login</a>
+		
+ <!-- ///////////////////////////////-->
+	 <!-- BEGINING of SOCIAL MEDIA -->         
+  <!-- ///////////////////////////////--> 
+	
+	<div class="social_media">
+		<a href="https://twitter.com"> <span class="glyphicon glyphicon-ok-circle"></span>Twitter - </a>
+	  	<a href="https://www.facebook.com" ><span class="glyphicon glyphicon-ok-circle"></span>FB - </a>
+	  	<a href="https://plus.google.com" ><span class="glyphicon glyphicon-ok-circle"></span>Google+ </a>
+	</div> 
+	 
+ <!-- ///////////////////////////////-->
+	 <!-- END of SOCIAL MEDIA -->         
+  <!-- ///////////////////////////////-->		  		  
+ </footer>			
+	 </div><!--end class container (1st after body)    		
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	 <!-- Latest compiled and minified JavaScript -->
+	
+	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/js/bootstrap.min.js"></script>
+	<!--    <script src="../../dist/js/bootstrap.min.js"></script>-->
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+
+
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<!--    <script src="../../assets/js/vendor/holder.min.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!--	  	<script src="../test9.js"></script> -->
+	  		<script src="/js/orderonline.js"></script>
+	
+	</body>
+</html>
